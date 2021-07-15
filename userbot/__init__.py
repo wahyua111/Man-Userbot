@@ -4,8 +4,8 @@
 # you may not use this file except in compliance with the License.
 #
 # inline credit @keselekpermen69
-# Recode by @mrismanaziz
-# t.me/SharingUserbot
+# Recode by @FAM1LY
+# t.me/mondarubot
 #
 """ Userbot initialization. """
 
@@ -160,10 +160,10 @@ ALIVE_TEKS_CUSTOM = os.environ.get(
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⛩️")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "❉")
+ICON_HELP = os.environ.get("ICON_HELP", "⛩️")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -179,7 +179,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Man-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Mon-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "0.5.3")
@@ -192,7 +192,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", "ini stikerku")
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/1bb535d67904320923847.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -346,7 +346,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🔥 Man-Userbot Berhasil Di Aktifkan 🔥```")
+    await bot.send_message(BOTLOG_CHATID, "```⛩️👹 Mon-Userbot Berhasil Di Aktifkan 👹⛩️```")
     return
 
 with bot:
@@ -423,18 +423,18 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"
+                f"**Hey**, __I am using__ ⛩️👹 **Mon-Userbot** 👹⛩️\n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
                 f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-                f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-                f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n")
+                f"✣ **Owner Repo :** [MONDAR111](t.me/FAM1LY)\n"
+                f"✣ **Repo :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
                                           custom.Button.url(
                                               text="⛑ Group Support ⛑",
-                                              url="https://t.me/SharingUserbot"
+                                              url="https://t.me/familynirvana"
                                           )
                                       ]
                                   ]
@@ -449,8 +449,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
-                        "**✗ Man-Userbot Main Menu ✗**",
+                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Mon-Userbot :** \n".format(
+                        "**✗ Mon-Userbot Main Menu ✗**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -461,31 +461,31 @@ with bot:
                     title="Repository",
                     description="Repository Man - Userbot",
                     url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [MONDAR111](https://t.me/FAM1LY)\n✣ **Grup Support :** @FAMILYNIRVANA\n✣ **Repository :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/familynirvana"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/mondar111/Mon-Userbot")],
                     ],
                     link_preview=False)
             else:
                 result = builder.article(
-                    title="✗ Man-Userbot ✗",
-                    description="Man - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    title="✗ Mon-Userbot ✗",
+                    description="Mon - UserBot | Telethon",
+                    url="https://t.me/familynirvana",
+                    text="**Mon - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [MONDAR111](https://t.me/FAM1LY)\n✣ **Grup Support :** @familynirvana\n✣ **Repository :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/familynirvana"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/mondar111/Mon-Userbot")],
                     ],
                     link_preview=False,
                 )
