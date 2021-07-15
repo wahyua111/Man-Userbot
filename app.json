@@ -1,7 +1,7 @@
 {
   "name": "Mon-Userbot",
   "description": "[Mon-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
-  "logo": https://telegra.ph/file/1bb535d67904320923847.jpg"",
+  "logo": "https://telegra.ph/file/1bb535d67904320923847.jpg",
   "keywords": ["telegram", "userbot", "mon-userbot", "modular", "python"],
   "repository": "https://github.com/mondar111/Mon-Userbot",
   "telegram": "https://t.me/mondar111",
