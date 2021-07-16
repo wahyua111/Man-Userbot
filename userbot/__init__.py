@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 # inline credit @keselekpermen69
-# Recode by @FAM1LY
+# Recode by @mondarajedah
 # t.me/mondarubot
 #
 """ Userbot initialization. """
@@ -107,9 +107,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/mrismanaziz/Man-Userbot.git")
+    "https://github.com/mondar111/Mon-Userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Man-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Mon-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -427,7 +427,7 @@ with bot:
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
                 f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-                f"✣ **Owner Repo :** [MONDAR111](t.me/FAM1LY)\n"
+                f"✣ **Owner Repo :** [MONDAR111](t.me/mondarajedah)\n"
                 f"✣ **Repo :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
@@ -461,7 +461,7 @@ with bot:
                     title="Repository",
                     description="Repository Man - Userbot",
                     url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [MONDAR111](https://t.me/FAM1LY)\n✣ **Grup Support :** @FAMILYNIRVANA\n✣ **Repository :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [MONDAR111](https://t.me/mondarajedah)\n✣ **Grup Support :** @FAMILYNIRVANA\n✣ **Repository :** [Mon-Userbot](https://github.com/mondar111/Mon-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
